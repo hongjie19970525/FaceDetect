@@ -12,7 +12,7 @@ size = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),int(cap.get(cv2.CAP_PROP_FRAME_HE
 fourcc = cv2.VideoWriter_fourcc(*'DIVX')#编码格式
 #cv2.VideoWriter_fourcc('X','V','T','D')
 #cv2.VideoWriter_fourcc('I','4','2','0')  
-video = cv2.VideoWriter("aaa1.avi", fourcc, 5, size)#保存文件为output.avi,5帧 
+video = cv2.VideoWriter("output.avi", fourcc, 5, size)#保存文件为output.avi,5帧 
 print(cap.isOpened())  
   
 classifier=cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")   #调用训练文件  
